@@ -49,7 +49,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `first_name`, `last_name`, `email`, `password`, `phone_code`, `mobile_number`, `otp`, `otp_date`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Radical', 'Hash', 'info@radicalhash.com', '$2y$10$VnzpfsOro9NtDhRAm4YABOWiYiPJlU.hI6kSeJKAH0Trsj91MxWbe', '91', '8058221535', NULL, NULL, 1, 'BxxYakKuahfGX5fEbJ3evGuu1tlK0y4jWxrbEy41FHCErUxzO0I3bMXAve4o', '2018-02-04 06:16:17', '2018-06-18 11:24:32');
+(1, 'Radical', 'Hash', 'info@radicalhash.com', '$2y$10$VnzpfsOro9NtDhRAm4YABOWiYiPJlU.hI6kSeJKAH0Trsj91MxWbe', '91', '0000000000', NULL, NULL, 1, 'BxxYakKuahfGX5fEbJ3evGuu1tlK0y4jWxrbEy41FHCErUxzO0I3bMXAve4o', '2018-02-04 06:16:17', '2018-06-18 11:24:32');
 
 -- --------------------------------------------------------
 
@@ -88,7 +88,7 @@ CREATE TABLE `password_resets` (
 --
 
 INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
-('k.rsaini20@gmail.com', '$2y$10$9GxtdDfwbhkAvphkMsAnoOWUaD4evxPI8/mlOM.s3CjsZMaiphX2C', '2019-02-16 04:50:26');
+('demo@gmail.com', '$2y$10$9GxtdDfwbhkAvphkMsAnoOWUaD4evxPI8/mlOM.s3CjsZMaiphX2C', '2019-02-16 04:50:26');
 
 -- --------------------------------------------------------
 
@@ -162,12 +162,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `status`, `api_token`, `mobile_number`, `btc_address`, `btc_public`, `eth_address`, `btc_private_key`, `eth_private_key`, `created_at`, `updated_at`) VALUES
-(1, 'radicalhash', 'info@radicalhash.com', NULL, '$2y$10$VnzpfsOro9NtDhRAm4YABOWiYiPJlU.hI6kSeJKAH0Trsj91MxWbe', 'sihNDyuBWLMM3VbHsUlpcPHYij2v0lQ80wtdsPIc55HX5Sx1HY5hrVphl7g5', 1, NULL, NULL, '', '', '', NULL, NULL, '2019-02-06 05:30:01', '2019-02-06 05:30:01'),
-(10, 'Alex Vaitkus', 'jupiter.kgh720@gmail.com', NULL, '$2y$10$S4QQUG5TNoQCuU/Zrip2TuCDpO8/5gveQC9H0ubDWl7.8E5EhY7YG', 'qHED1WCPis8LZdOvyBgnKk7RnXBrRNmTfG3YgyDSFY7R2Ygyc7KDMGCa5rJu', 1, '6RTgtmWAWnbgaU0VQyRNTbDoUxqLCP69dHqSMDsEt6ZtVkzeXM6ZZ9lq4Um9NPgUo', NULL, 'n4nSaZ84DbjEp5BpW19ABmXMqH7j4ito3n', '02c37b0ec5eec21f0cd2d2f94f9a988c1f13cc0a1529460c3dec0cff8f3c280b2c', '842eca8342be0e3e3a4c663f6481752c5ead175c', 'eyJpdiI6Inh1bHlyVlVcL1VvVmZGajBicGdBZCt3PT0iLCJ2YWx1ZSI6Im1GREFHM1dwOFJURENiSW9ROUMxKzc5ak5IMkpJVlJKS2lCRWdwNjBBYkFyaktOTnM5eE9mSmJ4cnVTVFVWUzFTYXlkUnVlK1NQSHNpNWhDTDF1UVpDWGxiaVpDaEQwTWhlck14elc2SVJRPSIsIm1hYyI6Ijg5YTg0MTlkNGExYTNmYjMwMWVmOTQ2MzRhYWUzYTBjNGQ2OGUxYWVjMTg3YjRlODI0YmQ1NTRhNTI3YWMzMjYifQ==', 'eyJpdiI6IkxJOUhwRk85VEUwclwvczRuNDl1a1BRPT0iLCJ2YWx1ZSI6IkxJNTNzT21RSDViS0J1RUJ1N05KY25PWDQ0dFNYVElxeTdVNWxEXC90SUs3Und0NXBNczlGc1BVMVA5VXVIYTZURWNjc3dPeVg0c1FhVmVGUXlIaG45YzJTaERHV2RvVHd1QkZJMXVGNE02RT0iLCJtYWMiOiJiMGM5NzMwYmI5ZTFiNGRlOTllYzkyNWZkZWY0NmRhNjk0Yjk3ZmEyOTU2MzUxNzM4ZTBlYmMyMmMxMGQwNDAxIn0=', '2019-02-12 16:55:17', '2019-02-22 14:00:00'),
-(12, 'hello', 'hello@sohanyadav.com', NULL, '$2y$10$vuST650Tt.8EE5aVvoAHReOVsOYVUO4EjkshsFHABLH5IyzQuiEMG', NULL, 1, 'jpDKLxOWgV2rB9Bqu4ManVMNlAXOwDGXaYeoUtMVQSkRVchVWAb2Dhdm58jqLfAtc', NULL, '', '', '', NULL, NULL, '2019-02-13 05:14:49', '2019-02-15 13:40:22'),
-(15, 'Sohan Yadav', 'Sonu5650@gmail.com', NULL, '$2y$10$sGoWMbnEVIWfCtktGj/txuX/BY8kxi330nTm.C3GsUmM55kUIsJAa', NULL, 1, 'XPHNZuR9ZY9PBFSnppA0tFJ2gRq91texPVS0tw6JJvHLLDVmgrhfqdo3uN8bZtmuo', NULL, 'mtxPSCyrvBpsgAgD6Pztrr5eFyGk4axGEj', '02498d758ba9d583e6e401f4b3ba204520125b8c04348dd482d64aca88fec39bed', '90604268843681d95b313b38b8e2ecbd13f3a7af', 'eyJpdiI6ImdKT2FBdHRZNmFveHNNMnhmVXpNeUE9PSIsInZhbHVlIjoiRmpRQm5hVm9SMWZtYVRKUXpXeVgrYW5TTEQyTEJLc0FmSktaSXd2c3NiT0FXRFFyb3pJXC85TWJcL2NLeGl3UEFRMDhsRThFSkNsYjBVVmZkNHBzUEcyZWtaMHBkYW42UnJ2NGtrSWRwbXEwbz0iLCJtYWMiOiI0MDY5YTExZmZjYTc2NzgxYzY4NjI0ODJiZWRhMWU5ZTY3OWNmMzVkZTQxNTllNGUyYTI3MDc1MGRiNjVkMWE3In0=', 'eyJpdiI6ImpheE1xd2g3MEVMUlRsQVlpalArc1E9PSIsInZhbHVlIjoiQU93dW5cLzV6UFcwMit4ZFwvMGxoa1FHWGlQSE93ZkhrZU16VFlOSDNmd2VFemQ3ZDJZZENTMWZoVHFvT1VjRG9yNGg3N3VcL2lPWnJUZTg3R2NrZ2JzUk1FK0JPSXY4NTVFR3plNjFqbGJVOVE9IiwibWFjIjoiMTQwM2E4YjIwYmZmZjEyZWEyNDE1ZTI5NzQ3N2Y2NDBkN2I4NzhlMWFkZWY5YTMyODcwNDEyZDI1ZGE1ZmJkMiJ9', '2019-02-13 05:59:30', '2019-02-23 12:50:36'),
-(16, 'Kaluram', 'k.rsaini20@gmail.co', NULL, '$2y$10$MGWxPvpxAt.p30s/mIcEFO8W2daM/TZD6S/SlXf4Jm4mOjL1b/4RW', NULL, 1, 'i81IYgtlolqCm97NX8zzae0WjpLMp42z6iqWwWeYXvBasy23pAyrumGA4o1LdXVqs', NULL, '', '', '', NULL, NULL, '2019-02-13 06:02:22', '2019-02-23 12:52:07'),
-(17, 'kaluramsaini', 'k.rsaini20@gmail.com', NULL, '$2y$10$XAu5d3edYPmDg6hxm91gJuDUZZM6N9XI8EQdh3gTq6dN28F31Bh0a', 's9FRvejAgMKBXg3eRpe41KbwOo9ZD26hlGMKaIvlzMSUOR8Gwgf8A1j3Bwp0', 1, 'zJvzYLiF5PDvDYaDJHlCTYzcCzdM5JZA7yuakyPmJkbuvZer0sA1iL3CKh8fspfkV', NULL, 'mr7oWbnzPXKZqWsj9cLTQsBo6sQHHT5Pgf', '02537ed9d9b6ea51cf5a6bb89c52c0e300ae67ce9014539a8227ba1e2817982c0e', '65b615ff7b02947f543e4048a6bef17edf921261', 'eyJpdiI6IldlVXh1SnpYVHdsY2Z3alwvcmtESUJRPT0iLCJ2YWx1ZSI6IktPTDVyWHVCZnY1enpcL3MyaEQ2TitOblE0N3NoRWlyZFhxclwvT1Foa01tSEdqdUNBeVFVcm9uZ0dUV1dXVDNhK2c5dEJtc0l2WkxrbGhKVXliOHdYd2EwdDdXb2JRQ0Vxdkg0MlUyd0dzc0E9IiwibWFjIjoiODRiYWVhMjM3OGJkYWFmMzdlZjFlNjI4N2MzMTZlNWM4NzcxYjFiZDYwMWNhOTMyZWRhYmMyZGI0ZmIwNWU3YSJ9', 'eyJpdiI6IlBhSjNXS2xwYWJtRGp5YURFN3FBUXc9PSIsInZhbHVlIjoiUTlxQzF0c2tkU2o0ZWtFQ3o1KzlBMDBMcVhmc0dRUGI2WnlzZUJwQzgxZ21sc2pTSVpYa1ZHa3NDQlNUa1dBQlBPR1NlOEdnZ3k5TlMrRVh5eThcL1hiTFBqNE5Yc2VSa1UrOTEyWkJmdHJRPSIsIm1hYyI6IjdhYmZlYzQ2ZTUwOTE4Y2QyNmYyYTE5MjM3Mjk0MmQyMzA3Mzk1ZDk5MDgzMmJiMzE3NmZlZDE2OTJhNGVjYzAifQ==', '2019-02-15 08:05:03', '2019-02-23 10:08:06');
+(1, 'radicalhash', 'info@radicalhash.com', NULL, '$2y$10$VnzpfsOro9NtDhRAm4YABOWiYiPJlU.hI6kSeJKAH0Trsj91MxWbe', 'sihNDyuBWLMM3VbHsUlpcPHYij2v0lQ80wtdsPIc55HX5Sx1HY5hrVphl7g5', 1, NULL, NULL, '', '', '', NULL, NULL, '2019-02-06 05:30:01', '2019-02-06 05:30:01');
 
 --
 -- Indexes for dumped tables
